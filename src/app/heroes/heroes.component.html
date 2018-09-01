@@ -1,4 +1,8 @@
-<!--Les doubles accollades traduisent : l'interpolation => binding( fonctionne aussi avec une methode)-->
-<h2><div>{{hero.name}}</div></h2>
+<!--
+    - Les doubles accollades ({{}}) traduisent : l'interpolation => binding( fonctionne aussi avec une methode)
+    - Les pipes(uppercase) grace aux pipeOperators(|) permettent de formatter correctement des objets(dates, strings...)
+-->
+
+<h2><div>{{hero.name | uppercase}}</div></h2>
 <div><span>id: {{hero.id}}</span></div>
 <div><span>name: {{hero.name}}</span></div>
