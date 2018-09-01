@@ -8,6 +8,12 @@ import { Hero} from '../hero';
 })
 export class HeroDetailComponent implements OnInit {
 
+  /*
+    @input() signifie que  :
+    - la valeur de cette property viendra d'un autre component
+    - spécialement un input du composant contenant l'input
+    - Dès son appel elle sera instanciée et recevra le contenu de l'input
+  */
   @Input() hero: Hero;
 
   constructor() { }
